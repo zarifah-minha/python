@@ -1,0 +1,8 @@
+n = int(input("Enter a number: "))
+
+i = 1
+sum = 0
+while i<n+1:
+    sum = i + sum
+    print(f"Sum after adding {i}: {sum}")
+    i = i +1
