@@ -1,8 +1,8 @@
-guess = int(input("Enter a number: "))
 secret = 27
 attempts = 0
 
 while attempts < 5:
+    guess = int(input("Enter a number: "))
     attempts= attempts+1
     if guess == secret:
         print("YOU WIN!")
@@ -14,7 +14,7 @@ while attempts < 5:
 
     print("Lives left: ", end="")
 
-    for i in range(5):
+    for i in range(5 - attempts):
         print("heart", end=" ")
 
     print()
